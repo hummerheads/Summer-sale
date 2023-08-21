@@ -45,6 +45,7 @@ window.onload = function(){
         prod1Element.appendChild(prod1InnerText);
         document.getElementById("ordered-list").appendChild(prod1Element);
         document.getElementById('price-total').innerText = totalPrice.toFixed(2);
+        purchaseButton.removeAttribute('disabled');
     })
 
     document.getElementById('product3').addEventListener('click', function(){
@@ -64,6 +65,7 @@ window.onload = function(){
         prod1Element.appendChild(prod1InnerText);
         document.getElementById("ordered-list").appendChild(prod1Element);
         document.getElementById('price-total').innerText = totalPrice.toFixed(2);
+        purchaseButton.removeAttribute('disabled');
     })
 
     document.getElementById('product4').addEventListener('click', function(){
@@ -83,8 +85,7 @@ window.onload = function(){
         prod1Element.appendChild(prod1InnerText);
         document.getElementById("ordered-list").appendChild(prod1Element);
         document.getElementById('price-total').innerText = totalPrice.toFixed(2);
-            
-        
+        purchaseButton.removeAttribute('disabled');     
     })
 
     document.getElementById('product5').addEventListener('click', function(){
@@ -104,6 +105,7 @@ window.onload = function(){
         prod1Element.appendChild(prod1InnerText);
         document.getElementById("ordered-list").appendChild(prod1Element);
         document.getElementById('price-total').innerText = totalPrice.toFixed(2);
+        purchaseButton.removeAttribute('disabled');
     })
 
     document.getElementById('product6').addEventListener('click', function(){
@@ -123,6 +125,7 @@ window.onload = function(){
         prod6Element.appendChild(prod6InnerText);
         document.getElementById("ordered-list").appendChild(prod6Element);
         document.getElementById('price-total').innerText = totalPrice.toFixed(2);
+        purchaseButton.removeAttribute('disabled');
     })
     
     
