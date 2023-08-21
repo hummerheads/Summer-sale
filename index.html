@@ -151,19 +151,32 @@
             <div class="bg-white my-5 p-5">
                 <p class="text-xl py-5">Have coupon?</p>
                 <div class="flex gap-0">
-                    <input class="py-4 border-2 rounded-l-lg" type="text" placeholder="Coupon code" name="" id="">
-                    <button class="btn-primary text-2xl px-5 py-4 text-white bg-pink-500 rounded-r-lg">Apply</button>
+                    <input class="py-4 border-2 rounded-l-lg" type="text" placeholder="Coupon code" name="" id="input-coupon">
+                    <button id="coupon-button" disabled class="btn-primary text-2xl px-5 py-4 text-white bg-pink-500 rounded-r-lg">Apply</button>
                 </div>
             </div>
             <div class="bg-white p-0 md:p-5 lg:p-5">
-                <ol class="text-2xl font-medium py-5"></ol>
+                <ol id="ordered-list" class="text-2xl font-medium py-5 list-decimal px-5">
+                </ol>
                 <hr>
-                <h4 class="text-2xl font-medium py-3">Total Price: </h4>
-                <h4 class="text-2xl font-medium py-3">Discount: </h4>
-                <h4 class="text-2xl font-medium py-3">Total: </h4>
+                <h4 class="text-2xl font-medium py-3">Total Price: <span id="price-total"></span> TK</h4>
+                <h4 class="text-2xl font-medium py-3">Discount: <span id="price-discount"></span> TK</h4>
+                <h4 class="text-2xl font-medium py-3">Total: <span id="price-final"></span> TK</h4>
                 <hr>
                 <div class="pt-5">
-                    <button class="btn-primary text-2xl px-5 py-4 text-white bg-pink-500 rounded-lg">Make Purchase</button>
+                    <button disabled id="purchase-button"  onclick="my_modal_1.showModal()" class="btn-primary text-2xl px-5 py-4 text-white bg-pink-500 rounded-lg">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal">
+                      <form method="dialog" class="modal-box">
+                        <figure>
+                          <img class="mx-auto" src="images/congo.png" alt="">
+                        </figure>
+                        <h3 class="font-bold text-5xl text-center ">Congratulationa</h3>
+                        <p class="py-4 text-center text-xl" >You purchased the product</p>
+                        <div class="modal-action">
+                          <button id="gohome-btn" class="mx-auto btn-primary btn-primary  text-white font-semibold bg-[#E527B2] text-xl px-5 py-2 rounded-lg mx-20 my-5">Go Home</button>
+                        </div>
+                      </form>
+                    </dialog>
                 </div>
             </div>
         </div>
